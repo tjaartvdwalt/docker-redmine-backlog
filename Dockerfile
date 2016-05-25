@@ -6,7 +6,7 @@ RUN cd plugins && \
     unzip redmine_backlogs && \
     rm redmine_backlogs.zip && \
     mv redmine_backlogs-1.0.6 redmine_backlogs && \
+    cd .. && \
     export RAILS_ENV=production && \
     bundle exec rake db:migrate && \
-    cd .. && \
     bundle exec rake redmine:backlogs:install
