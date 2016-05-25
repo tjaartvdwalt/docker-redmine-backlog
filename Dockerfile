@@ -8,7 +8,7 @@ RUN cd plugins && \
     mv redmine_backlogs-1.0.6 redmine_backlogs && \
     cd redmine_backlogs && \
     sed -i -e 's/gem\ \"nokogiri\",\ \"<\ 1.6.0"//g' Gemfile
-    cd .. && \
+    cd ../.. && \
     export RAILS_ENV=production && \
     bundle exec rake db:migrate && \
     bundle exec rake redmine:backlogs:install
