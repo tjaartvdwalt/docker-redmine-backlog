@@ -10,8 +10,8 @@ RUN cd plugins && \
     sed -i -e 's/gem \"nokogiri\", \"< 1.6.0"//g' Gemfile && \
     sed -i -e 's/gem \"capybara\", \"~>1.1.0\"//g' Gemfile && \
     sed -i -e 's/gem \"simplecov\", \"~>0.6\"//g' Gemfile && \
-    
     cd ../.. && \
+    gem install holidays && \
     export RAILS_ENV=production && \
     bundle exec rake db:migrate && \
     bundle exec rake redmine:backlogs:install
