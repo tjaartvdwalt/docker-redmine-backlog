@@ -1,4 +1,4 @@
-FROM redmine
+FROM redmine:2.6.10
 RUN cd plugins && \
     apt-get update && \
     apt-get -qq install zip && \
