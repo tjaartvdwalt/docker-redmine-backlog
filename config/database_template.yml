@@ -1,7 +1,0 @@
-production:
-  adapter: $TYPE
-  database: $DATABASE
-  host: $HOST
-  username: $USERNAME
-  password: $PASSWORD
-  encoding: utf8
