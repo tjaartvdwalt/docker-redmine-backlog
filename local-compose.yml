@@ -1,0 +1,9 @@
+redmine:
+  extends:
+    file: docker-compose.yml
+    service: redmine
+  build: .
+  env_file: _env
+  ports:
+    - 8080:80
+    - 3030:3000
